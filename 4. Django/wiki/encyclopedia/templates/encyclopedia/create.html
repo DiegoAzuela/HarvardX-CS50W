@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create new Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+        <p> Use the following form to create a new page</p>
+        <p>Please note that Qwikipedia uses <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Github Markdown</a> to style its pages, which is converted to HTML when entries are requested by a user.</p>
+    <div>
+        <form action="{% url 'create' %}" method="POST">
+            {% csrf_token %}
+            {{ create_form }}
+            <input id="id-newpage" type="submit" value="Save">
+        </form>
+    </div>
+
+{% endblock %}

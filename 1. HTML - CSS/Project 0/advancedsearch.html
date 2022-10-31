@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <div class="header2">
+            <h2 id="title-advsearch">Google</h1> <!--https://www.google.com/advanced_search-->
+            <h3 id="subtitle-advsearch"> Advanced Search </h3>
+        </div>
+        <div id="container-advsearch">
+            <!--START OF FORM-->
+            <form class="form">
+                <div id="Find-Pages-With">
+                    <table>
+                        <thead>
+                            <th>Find pages with...</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>all these words: </td>
+                                <td><input class="adv-search-input-text" type="text" placeholder="" name="all-these-words"></td>
+                            </tr>
+                            <tr>
+                                <td>this exact word or phrase: </td>
+                                <td><input class="adv-search-input-text" type="text" placeholder="" name="exact-word-or-phrase"></td>
+                            </tr>
+                            <tr>
+                                <td>any of these words: </td>
+                                <td><input class="adv-search-input-text" type="text" placeholder="" name="exact-word-or-phrase"></td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                <div id="Narrow-Results-By">
+                    <table>
+                        <thead>
+                            <th>Then narrow your results by..</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>language: </td>
+                                <td>
+                                    <select name="language" id="language-select" class="dropdown-list">
+                                        <option class="dropdown-item" value=""></option>
+                                        <option class="dropdown-item" value="English">English</option>
+                                        <option class="dropdown-item" value="French">French</option>
+                                        <option class="dropdown-item" value="German">German</option>
+                                        <option class="dropdown-item" value="Spanish">Spanish</option>
+                                    </select>        
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>region: </td>
+                                <td>
+                                    <select name="region" id="region-select" class="dropdown-list">
+                                        <option class="dropdown-item" value=""></option>
+                                        <option class="dropdown-item" value="USA">USA</option>
+                                        <option class="dropdown-item" value="France">France</option>
+                                        <option class="dropdown-item" value="Germany">Germany</option>
+                                        <option class="dropdown-item" value="Mexico">Mexico</option>
+                                    </select>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>last update: </td>
+                                <td>
+                                    <select name="last-update" id="last-update-select" class="dropdown-list">
+                                        <option class="dropdown-item" value=""></option>
+                                        <option class="dropdown-item" value="anytime">anytime</option>
+                                        <option class="dropdown-item" value="past 24 hrs">past 24 hrs</option>
+                                        <option class="dropdown-item" value="past week">past week</option>
+                                        <option class="dropdown-item" value="past month">past month</option>
+                                    </select>  
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
+                <input type="submit" placeholder="Advanced Search" id="Btn-AdvSearch">
+            </form>
+        </div>        
+    </body>
+</html>

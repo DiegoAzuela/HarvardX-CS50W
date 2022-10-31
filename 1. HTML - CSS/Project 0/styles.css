@@ -1,0 +1,137 @@
+/*--- STRUCTURE INFORMATION ---*/
+body{
+    background-color: 	#303030;
+}
+.header{
+    margin:10px;
+    text-align: right;
+}
+.header2{
+    margin:10px;
+    text-align: left;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
+}
+
+
+/*--- TITLES INFORMATION ---*/
+/*h1*/
+#title-mainpage, #title-imgpage{
+    color: white;
+    font-size: 100px;
+}
+/*h2*/
+#title-advsearch{
+    color: white;
+    font-size: 30px; 
+    text-align: left;
+}
+/*h3*/
+#subtitle-advsearch{
+    color: lightcoral;
+    font-size: 20px;
+    text-align: left;
+}
+/*h4*/
+#subtitle-imgpage{
+    color: white;
+    text-align: right;
+    font-size: 15px;
+}
+/*h1*/
+h1,form{
+    text-align: center;
+    margin:20px;
+}
+/*h5*/
+h5,th{
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*--- REFERENCE LINKS ---*/
+/*reference links*/
+a{  
+    text-align:right;
+    color: white;
+    margin: 10px;
+}
+
+/*--- BODY DEV ---*/
+#search-input-box{
+    background-color:black; border-color: white; border-width: 0.5px; border-radius: 20px;
+    width:500px; height:40px;
+}
+input[id="search-input-box"]{
+    color:white;
+    padding: 15px;
+}
+input[type=submit]{
+    color:white;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+#submit-button, #feeling-lucky-button{
+    color:white;
+    margin:10px;
+    background-color: 	#505050;
+    border-color: white;
+    border: 3px;
+    width: 150px;
+}
+#container-advsearch{
+    margin: 15px;
+    border: 1px;
+    border-color: lightcoral;
+}
+
+/*--- BODY DEV ADV SEARCH ---*/
+#container-advsearch{
+    border-bottom: 3px;
+    border-bottom-color: lightcoral;
+}
+.form{
+    color: white;
+    text-align: left;
+}
+#Btn-AdvSearch{
+    background-color: #87C1FF;
+    border: #87C1FF;
+}
+.adv-search-input-text{
+    border:2px;
+    border-color: white;
+    background-color: #505050;
+}
+/*Table properties*/
+th{
+    width: 250px;
+}
+tr{
+    padding-left: 10px;
+}
+input[class="adv-search-input-text"], .dropdown-item{
+    color:white;
+    padding-left: 5px;
+}
+table{
+    margin-bottom: 25px;
+    border-bottom: 2px;
+    border-bottom-color: whitesmoke;
+}
+.dropdown-list{
+    color: white;
+    width: 187.5px;
+    background-color: #505050;
+    border-color: white;
+    border:2px
+}

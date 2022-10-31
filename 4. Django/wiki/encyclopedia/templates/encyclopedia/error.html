@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error page {{title}} not found
+{% endblock %}
+
+{% block body %}
+    <h1> Error 404: Entry "{{title}}" not found </h1>
+    <p> Check the <a href="{% url + 'index' %}"> index</a> to see available articles</p>
+    <ul>
+        {% if related_titles%}
+        <p> Related Entries: </p>
+            <li>
+                {% for title in related_titles %}
+                    <li> <a href="{% url 'entry' title=title %}">{{title}}</a></li>
+                {% endfor %} 
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
